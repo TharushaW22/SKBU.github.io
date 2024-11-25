@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reg.css">
+    <title>Karate Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form action="#" method="post">
+                <h1>Karate Class Registration</h1>
+                <p>Join our karate family and begin your martial arts journey today!</p>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="emergency">Emergency Contact</label>
+                <input type="tel" id="emergency" name="emergency" placeholder="Enter emergency contact number" required>
+
+                <label for="gender">Gender</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <label for="experience">Karate Experience</label>
+                <select id="experience" name="experience" required>
+                    <option value="" disabled selected>Select your experience level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+
+                <label for="time">Preferred Class Time</label>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Select your preferred class time</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+
+                <button type="submit">Register Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
